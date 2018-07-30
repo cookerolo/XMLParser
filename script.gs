@@ -64,7 +64,7 @@ function emailNotifier(body, city) {
   var d = new Date();
   var subject = 'XML file - ' + city + ' - ' + d.getDate() + '/' + (d.getMonth() + 1);
   var emailBody = body;
-  var email = GmailApp.createDraft("victor.cooke@crossover.com", subject, emailBody);
+  var email = GmailApp.createDraft("name@yourgmail.com", subject, emailBody);
   email.send();
 }
 
