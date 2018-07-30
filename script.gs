@@ -11,7 +11,8 @@ function onOpen() {
 function doGet() {
   
   //Get values from spreadsheet by spreadsheet ID (find it on the URL)
-  var spreadsheet = SpreadsheetApp.openById("1GSrvY-qwT0HkjiZBuiBMUMvfoJj6Nyiy51LQ4IAulIY").getSheets()[0];
+  var sheetId = "yourSheetIdHere";
+  var spreadsheet = SpreadsheetApp.openById(sheetId).getSheets()[0];
   
   //Select the range of interest in your spreadsheet
   var range = spreadsheet.getRange("A2:AA3000");
